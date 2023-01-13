@@ -1,0 +1,86 @@
+.img{
+    float: left;
+    margin-right: 15px;
+    text-align: left
+}
+.container{
+   background-color: rgb(31, 29, 29);
+    display: flex;
+   padding: 20px;
+}
+.header
+{   
+    color: white;
+    margin-left: 10px;
+}
+.icons{
+    
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 27px;
+   height: 750px;
+   background: #eeeeee;
+   font-size: 25px;
+   
+
+}
+table{
+    left:40px;
+    border-collapse: collapse;
+
+
+}
+tr,td{
+  width: 370px;
+  height: 45px;
+  text-align: left;
+
+}
+td{
+    padding-left:3px;
+}
+
+tr:nth-child(even){
+  background-color : rgb(231, 226, 226);
+ 
+}
+
+.flex-container{
+    display: flex;
+}
+
+i{
+    padding-bottom:95px;
+    padding-left: 3px;
+    padding-right: 4px;
+}
+tr td:last-child{
+    color: blue;
+}
+.botttom
+{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+    gap: 200px;
+    background-color: rgb(74, 105, 164);
+    height:60px;
+}
+.cattyboard1{
+    text-align: center;
+}
+.botttom1{
+    display: flex;
+    gap: 20px;
+    
+}
+.icons1{
+    display: flex;
+    align-items: center;
+}
+.icons1 a{
+    margin-top: 70px;
+    margin-left: 200px;
+}

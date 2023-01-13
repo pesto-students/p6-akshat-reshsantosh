@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(35, 68, 68);
+    color: aliceblue;
+
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column1, .column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column1, .column2 {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn {
+    
+    color: rgb(254, 255, 203);
+   width: 200px;
+  }
+  
+  .btn:hover {
+    background-color: #ff7700;
+    
+  }
+  
+ 
