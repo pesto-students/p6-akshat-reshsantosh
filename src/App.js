@@ -4,8 +4,15 @@ import { AnimeList } from "./Components/AnimeList";
 import { AnimeInfo } from "./Components/AnimeInfo";
 import { AddToList } from "./Components/AddToList";
 import { RemoveFromList } from "./Components/RemoveFromList";
-function App() {
+import * as Sentry from "@sentry/react";
+// import { ReactGA } from "react-ga";
 
+
+// const TRACKING_ID = "UA-247960761-1";
+// ReactGA.initialize(TRACKING_ID);
+
+function App() {
+  
   const [search,setSearch]=useState('power')
   const [animeData,setAnimeData]=useState();
   const [animeInfo,setAnimeInfo]=useState()
@@ -14,6 +21,7 @@ function App() {
   const addTo=(anime)=>{
     const index=myAnimeList.findIndex((myanime)=>{
         return myanime.mal_id === anime.mal_id
+     
     })
     if(index < 0){
       const newArray=[...myAnimeList,anime]
@@ -31,11 +39,13 @@ function App() {
       const res=await fetch(`https://api.jikan.moe/v4/anime?q=${search}&limit=20`)
       const resData= await res.json();
       setAnimeData(resData.data)
+
   }
+  
   useEffect(()=>{
     getData()
   },[search])
-
+ 
   return (
     <>
         <div className="header">
@@ -75,4 +85,5 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
+export default Sentry.withProfiler(App);
