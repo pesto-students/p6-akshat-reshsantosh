@@ -1,0 +1,88 @@
+
+.grid {
+
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+  display: grid;
+  grid-template-columns: 150px 150px ;
+  margin: 100px auto;
+}
+.grid:hover .red{
+  transform: rotate(90deg);
+    transition: transform 1s linear;
+    transform-origin: top left;
+}
+.grid:hover .yellow{
+  transform: rotate(-90deg);
+    transition: transform 1s linear;
+    transform-origin: top right;
+}
+.grid:hover .blue{
+  transform: rotate(-90deg);
+    transition: transform 1s linear;
+    transform-origin: bottom left;
+}
+.grid:hover .green{
+  transform: rotate(90deg);
+    transition: transform 1s linear;
+    transform-origin: bottom right;
+}
+
+.red {
+   
+    background: rgb(255, 0, 0);
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+     
+  }
+ 
+  .yellow{
+   
+    background: rgb(255, 221, 0);
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+   
+
+  }
+  
+  .blue{
+    
+    background: rgb(0, 38, 255);
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+  }
+   
+  .green {
+   
+  
+    background: rgb(12, 126, 25);
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+
+  }
+  
+  .Nestedgrid{
+    
+   display: grid;
+   justify-items: center;
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+  }
+  
+  .insidetext{
+    height: fit-content;
+    width: fit-content;
+    position:absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+  }
